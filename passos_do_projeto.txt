@@ -9,5 +9,7 @@ aula 02: https://www.youtube.com/watch?v=ItKbltXEicI
 7. main reescrita de acordo com o vídeo da aula 02
 8. criadas as pastas lib/app e lib/app/routes
 9. criados arquivos lib/app/routes/app_routes.dart e lib/app/routes/app_pages.dart
-10. criadas as pastas lib/app/ui e lib/app/ui/home
-11. iniciada home_page como o snippet getxpage
+10. criadas as pastas lib/app/ui e lib/app/ui/home e o arquivo lib/app/ui/home_page.dart
+11. iniciada home_page.dart como o snippet getxpage
+12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller
+13. iniciado home_controller.dart com o snippert getxcontroller

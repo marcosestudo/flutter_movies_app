@@ -3,11 +3,9 @@ import 'package:get/get.dart';
 
 void main() {
   runApp(GetMaterialApp(   
-    debugShowCheckedModeBanner: false,   
-    initialRoute: '/',   
-    theme: appThemeData,   
+    debugShowCheckedModeBanner: true,   
+    initialRoute: '/',
     defaultTransition: Transition.fade,   
-    getPages: MyRoutes.routes,   
-    home: HomePage(),   
+    getPages: MyRoutes.routes,
   ));   
 }

@@ -1,6 +1,8 @@
+aula 02: https://www.youtube.com/watch?v=ItKbltXEicI
 1. criado novo projeto flutter
 2. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
 3. "flutter pub get" no console pra instalar nova dependência
 4. excluída pasta test
 5. arquivo lib/main.dart limpo
 6. gerada main com o atalho "getxmain" no arquivo lib/main.dart
+7. main reescrita de acordo com o vídeo da aula 02

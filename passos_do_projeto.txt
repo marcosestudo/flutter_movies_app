@@ -2,3 +2,5 @@
 2. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
 3. "flutter pub get" no console pra instalar nova dependência
 4. excluída pasta test
+5. arquivo lib/main.dart limpo
+6. gerada main com o atalho "getxmain" no arquivo lib/main.dart

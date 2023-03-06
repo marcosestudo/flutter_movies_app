@@ -1,0 +1,4 @@
+1. criado novo projeto flutter
+2. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
+3. "flutter pub get" no console pra instalar nova dependência
+4. excluída pasta test

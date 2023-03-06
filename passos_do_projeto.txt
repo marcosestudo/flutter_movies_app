@@ -6,3 +6,5 @@ aula 02: https://www.youtube.com/watch?v=ItKbltXEicI
 5. arquivo lib/main.dart limpo
 6. gerada main com o atalho "getxmain" no arquivo lib/main.dart
 7. main reescrita de acordo com o vídeo da aula 02
+8. criadas as pastas lib/app e lib/app/routes
+9. criados arquiovos lib/app/routes/app_routes.dart e lib/app/routes/app_pages.dart

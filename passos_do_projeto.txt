@@ -33,4 +33,10 @@ https://medium.com/flutter-community/the-flutter-getx-ecosystem-dependency-injec
 
 Aula 05 dia 06/03/2023 https://www.youtube.com/watch?v=qOERoltSB_k
 https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d
-01.
+simple statement manager vs reactive statment manager
+simple atualiza a página inteira
+reactive atualiza algo específico como em um relógio que vai atualizando somente os segundos todo
+01. criada função fetchData() no arquivo home_controller.dart
+02. adicionada actions em AppBar no arquivo home_page.dart
+03. criada função reloadData() no arquivo home_controller.dart
+04. adicionado floatingActionButton no arquivo details_page.dart

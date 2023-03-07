@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       body: GetBuilder<HomeController>(
           init: HomeController(),
           builder: (_) {
-            return const Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));
+            return Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));
           }),
     );
   }

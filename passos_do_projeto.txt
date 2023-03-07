@@ -1,6 +1,6 @@
 Importante: "Alt + Enter" ações de contexto do flutter no android studio
 
-aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
+Aula2.2 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
 01. criado novo projeto flutter
 02. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
 03. "flutter pub get" no console pra instalar nova dependência
@@ -15,7 +15,7 @@ aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
 12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller.dart
 13. iniciado home_controller.dart com o snippert getxcontroller
 
-aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
+Aula2.3 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
 01. criada a pasta lib/app/details e o arquivo lib/app/details/details_page.dart
 02. iniciado details_page.dart com o snippet getxpage
 03. criado método onPressed() em lib/app/controllers/home_controller.dart

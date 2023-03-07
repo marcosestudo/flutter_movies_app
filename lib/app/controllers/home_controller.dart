@@ -4,12 +4,11 @@ import 'package:primeiro_app/app/routes/app_pages.dart';
 
 class HomeController extends GetxController {
 
-  final _obj = ''.obs;
-  set obj(value) => _obj.value = value;
-  get obj => _obj.value;
-
   void onPressed() {
-    Get.toNamed(Routes.DETAILS); //método para navegação por rota nomeada no getx
+    // Get.toNamed() método para navegação por rota nomeada no getx com possibilidade de voltar
+    // Get.offNamed() navega pra página e não pode voltar pra página anterior, se clicar na seta pra voltar, sai do app
+    // Get.offAllNamed() navega pra uma página que fecha todas as anteriores
+    Get.toNamed(Routes.DETAILS);
   }
 
 }

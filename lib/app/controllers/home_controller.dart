@@ -30,4 +30,12 @@ class HomeController extends GetxController {
       update();
     });
   }
+
+  void reloadData() {
+    // clicar no botão de reload chama o fetchData() nesse exemplo simples
+    // poderíamos ter chamado diretamente a função fetchdata() no onPressed,
+    // mas em casos mais complexos em que fôssemos arregar a função com outros
+    // parâmetros, por exemplo, essa função seria útil, então vai ficar aqui de exemplo
+    fetchData();
+  }
 }

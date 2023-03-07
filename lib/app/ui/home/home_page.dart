@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:primeiro_app/app/controllers/home_controller.dart';
 // note que no terceiro import não se coloca a pasta lib, já vai direto pra pasta app
-class HomePage extends StatelessWidget {
+
+// extends StatelessWidget trocado por extends GetView
+// GetView é um StatelessWidget com o controlador já instanciado
+class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
 
 
@@ -12,7 +15,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: const Text('Home Page (｡•́‿•̀｡)'),
           centerTitle: true,
-          actions: [] // actions saõ os botões que ficam no canto superior direito da appbar
+          // actions são os botões que ficam no canto superior direito da appbar
+          actions: [IconButton(onPressed: controller.reloadData, icon: const Icon(Icons.refresh))]
       ),
       body: GetBuilder<HomeController>(
           builder: (_) {

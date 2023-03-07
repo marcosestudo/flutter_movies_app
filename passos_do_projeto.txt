@@ -18,3 +18,4 @@ aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
 aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
 01. criada a pasta lib/app/details e o arquivo lib/app/details/details_page.dart
 02. iniciado details_page.dart com o snippet getxpage
+03. criado método onPressed() em lib/app/controllers/home_controller

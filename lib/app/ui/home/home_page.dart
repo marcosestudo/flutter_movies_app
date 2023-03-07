@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Home Page (｡•́‿•̀｡)'), centerTitle: true),
       body: GetBuilder<HomeController>(
-          init: HomeController(),
           builder: (_) {
             return Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));
           }),

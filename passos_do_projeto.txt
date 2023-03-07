@@ -12,10 +12,11 @@ aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
 09. criados arquivos lib/app/routes/app_routes.dart e lib/app/routes/app_pages.dart
 10. criadas as pastas lib/app/ui e lib/app/ui/home e o arquivo lib/app/ui/home_page.dart
 11. iniciada home_page.dart como o snippet getxpage
-12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller
+12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller.dart
 13. iniciado home_controller.dart com o snippert getxcontroller
 
 aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
 01. criada a pasta lib/app/details e o arquivo lib/app/details/details_page.dart
 02. iniciado details_page.dart com o snippet getxpage
-03. criado método onPressed() em lib/app/controllers/home_controller
+03. criado método onPressed() em lib/app/controllers/home_controller.dart
+04. iniciado home_controller.dart com o snippet getxcontroller

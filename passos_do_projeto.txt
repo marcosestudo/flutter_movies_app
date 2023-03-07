@@ -26,6 +26,11 @@ Aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
 04. iniciado home_controller.dart com o snippet getxcontroller
 
 Aula 04 dia 06/03/2023 https://www.youtube.com/watch?v=FsqsbKDFiFE
+https://medium.com/flutter-community/the-flutter-getx-ecosystem-dependency-injection-8e763d0ec6b9
 01. criados a pasta lib/app/bindings e o arquivo lib/app/bindings/home_binding.dart
 02. iniciado home_binding.dart com o snippet getxbinding
 03. removida inicialização da home page "init: HomeController()" do arquivo lib/app/ui/home/home_page.dart
+
+Aula 05 dia 06/03/2023 https://www.youtube.com/watch?v=qOERoltSB_k
+https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d
+01.

@@ -9,7 +9,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Page (｡•́‿•̀｡)'), centerTitle: true),
+      appBar: AppBar(
+          title: const Text('Home Page (｡•́‿•̀｡)'),
+          centerTitle: true,
+          actions: [] // actions saõ os botões que ficam no canto superior direito da appbar
+      ),
       body: GetBuilder<HomeController>(
           builder: (_) {
             return Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));

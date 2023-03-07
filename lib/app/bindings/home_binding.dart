@@ -13,6 +13,7 @@ class HomeBinding extends Bindings {
     // uma boa prática, nesse caso, para serviços que serão usados no app inteiro
     // é ter um arquivo de inicialização como o "initial_binding", onde
     // chamamos o SharedPreferences ou GetStorage por exemplo
+    // o GetX tem a propriedade da initialBinding pra ser colocada na main()
     Get.put(HomeController(), permanent: true);
   } 
 }

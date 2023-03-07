@@ -25,7 +25,7 @@ class HomeController extends GetxController {
     isLoading = true;
     update(); // chama o getbuilder em home_page.dart para atualizar a página
     // call repo to fetch data
-    Future.delayed(const Duration(seconds: 1)).then((value) {
+    Future.delayed(const Duration(seconds: 1)).then((value) { // delay de 1 segundo pra simular chamada
       isLoading = false;
       update();
     });

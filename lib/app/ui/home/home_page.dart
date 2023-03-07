@@ -20,7 +20,7 @@ class HomePage extends GetView<HomeController> {
       ),
       body: GetBuilder<HomeController>(
           builder: (_) {
-            return Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));
+            return Center(child: controller.isLoading ? const CircularProgressIndicator() : ElevatedButton(onPressed: _.onPressed, child: const Text("Página detalhes")));
           }),
     );
   }

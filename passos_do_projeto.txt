@@ -43,3 +43,4 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 04. adicionado floatingActionButton no arquivo details_page.dart
 05. criado método onPressedFloatingAction() no arquivo details_controller.dart
 06. Text trocado pelo wrap with Getx em details_page.dart
+07 criado arquivo lib/app/bindings/details_binding.dart e iniciado com o snippet getxbinding

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
-class MyPage extends StatelessWidget {
+
+class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('My Page')),
+      appBar: AppBar(title: Text('Details Page')),
       body: Container(
-        child: GetX<MyController>(
-            init: MyController(),
+        child: GetX<DetailsController>(
+            init: DetailsController(),
             builder: (_) {
               return Container();
             }),

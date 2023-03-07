@@ -1,15 +1,20 @@
-aula 02: https://www.youtube.com/watch?v=ItKbltXEicI
-"Alt + Enter" ações de contexto do flutter no android studio
-1. criado novo projeto flutter
-2. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
-3. "flutter pub get" no console pra instalar nova dependência
-4. excluída pasta test
-5. arquivo lib/main.dart limpo
-6. gerada main com o atalho "getxmain" no arquivo lib/main.dart
-7. main reescrita de acordo com o vídeo da aula 02
-8. criadas as pastas lib/app e lib/app/routes
-9. criados arquivos lib/app/routes/app_routes.dart e lib/app/routes/app_pages.dart
+Importante: "Alt + Enter" ações de contexto do flutter no android studio
+
+aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
+01. criado novo projeto flutter
+02. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
+03. "flutter pub get" no console pra instalar nova dependência
+04. excluída pasta test
+05. arquivo lib/main.dart limpo
+06. gerada main com o atalho "getxmain" no arquivo lib/main.dart
+07. main reescrita de acordo com o vídeo da aula 02
+08. criadas as pastas lib/app e lib/app/routes
+09. criados arquivos lib/app/routes/app_routes.dart e lib/app/routes/app_pages.dart
 10. criadas as pastas lib/app/ui e lib/app/ui/home e o arquivo lib/app/ui/home_page.dart
 11. iniciada home_page.dart como o snippet getxpage
 12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller
 13. iniciado home_controller.dart com o snippert getxcontroller
+
+aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
+01. criada a pasta lib/app/details e o arquivo lib/app/details/details_page.dart
+02. iniciado details_page.dart com o snippet getxpage

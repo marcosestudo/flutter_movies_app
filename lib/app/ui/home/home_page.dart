@@ -9,11 +9,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Page')),
+      appBar: AppBar(title: const Text('Home Page (｡•́‿•̀｡)'), centerTitle: true),
       body: GetBuilder<HomeController>(
           init: HomeController(),
           builder: (_) {
-            return const Center(child: Text("Essa é a nossa home page (｡•́‿•̀｡)"));
+            return const Center(child: Text("Essa é a nossa home page"));
           }),
     );
   }

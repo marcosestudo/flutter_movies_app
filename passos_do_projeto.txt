@@ -4,7 +4,10 @@ Importante:
 "flutter run" no terminal pra rodar o app no celular ou no emulador
 "flutter run -d chrome" no terminal pra rodar o app no chrome
 
-Aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
+06/03/2023 aula 01 https://www.youtube.com/watch?v=ItKbltXEicI
+https://pub.dev/packages/get
+
+06/03/2023 aula 02: https://www.youtube.com/watch?v=ItKbltXEicI
 01. criado novo projeto flutter
 02. adicionada dependência "get: ^4.6.5" no arquivo lib/pubspec linha 38
 03. "flutter pub get" no console pra instalar nova dependência
@@ -19,24 +22,24 @@ Aula 02 dia 06/03/2023: https://www.youtube.com/watch?v=ItKbltXEicI
 12. criados a pasta lib/app/controllers e o arquivo lib/app/controllers/home_controller.dart
 13. iniciado home_controller.dart com o snippert getxcontroller
 
-Aula 03 dia 06/03/2023: https://www.youtube.com/watch?v=G1HbeV3QhDw
+06/03/2023 aula 03: https://www.youtube.com/watch?v=G1HbeV3QhDw
 01. criados a pasta lib/app/details e o arquivo lib/app/details/details_page.dart
 02. iniciado details_page.dart com o snippet getxpage
 03. criado método onPressed() em lib/app/controllers/home_controller.dart
 04. iniciado home_controller.dart com o snippet getxcontroller
 
-Aula 04 dia 06/03/2023 https://www.youtube.com/watch?v=FsqsbKDFiFE
+06/03/2023 aula 04: https://www.youtube.com/watch?v=FsqsbKDFiFE
 https://medium.com/flutter-community/the-flutter-getx-ecosystem-dependency-injection-8e763d0ec6b9
 01. criados a pasta lib/app/bindings e o arquivo lib/app/bindings/home_binding.dart
 02. iniciado home_binding.dart com o snippet getxbinding
 03. removida inicialização da home page "init: HomeController()" do arquivo lib/app/ui/home/home_page.dart
 04. extends StatelessWidget trocado por extends GetView em home_page.dart
 
-Aula 05 dia 06/03/2023 https://www.youtube.com/watch?v=qOERoltSB_k
+06/03/2023 aula 05: https://www.youtube.com/watch?v=qOERoltSB_k
 https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d
 simple statement manager vs reactive statment manager
 simple atualiza a página inteira
-reactive atualiza algo específico como em um relógio que vai atualizando somente os segundos todo
+reactive atualiza algo específico como em um relógio que vai atualizando somente os segundos
 01. criado método fetchData() no arquivo home_controller.dart
 02. adicionada actions em AppBar no arquivo home_page.dart
 03. criada função reloadData() no arquivo home_controller.dart
@@ -45,3 +48,10 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 06. Text trocado pelo wrap with Getx em details_page.dart
 07. criado arquivo lib/app/bindings/details_binding.dart, iniciado com o snippet getxbinding e reescrito
 08. binding dicionada em app_pages.dart
+
+08/03/2023 aula 01: https://dart.dev/guides/language/effective-dart/style#prefer-using-_-__-etc-for-unused-callback-parameters
+
+08/03/2023 aula 02: https://docs.flutter.dev/development/ui/animations
+
+08/03/2023 aula 03: https://www.youtube.com/watch?v=i6mCwiL0k4k
+01. criada pasta assets

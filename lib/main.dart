@@ -6,7 +6,7 @@ import 'package:primeiro_app/app/routes/app_pages.dart';
 void main() {
   runApp(GetMaterialApp(   
     debugShowCheckedModeBanner: true,   
-    initialRoute: Routes.HOME,
+    initialRoute: Routes.SPLASH,
     defaultTransition: Transition.fade,   
     getPages: AppPages.pages,
     initialBinding: InitialBinding(),

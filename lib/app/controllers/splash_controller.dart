@@ -22,4 +22,8 @@ class SplashController extends GetxController {
   double findLogoSize() {
     return Get.height * 0.3;
   }
+
+  double findIconSize() {
+    return Get.height / 15;
+  }
 }

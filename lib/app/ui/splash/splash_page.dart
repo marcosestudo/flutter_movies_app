@@ -22,8 +22,7 @@ class SplashPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      // findIconSize calcula o tamanho do ícone de acordo com o tamnaho da tela
-                      Icon(Icons. access_time,
+                      Icon(Icons.access_time,
                         size: _.findIconSize(), color: Colors.white),
                       Icon(Icons.settings,
                         size: _.findIconSize(), color: Colors.white),

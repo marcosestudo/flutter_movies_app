@@ -64,3 +64,4 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 04. buiulder criado em splash_page.dart
 05. adicionado AnimatedContainer em splash_page.dart
 06. adicionado splashcontroller.dart a lib/app/controllers
+07. adicionado SplashPage a app_pages.dart

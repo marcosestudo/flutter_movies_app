@@ -55,7 +55,34 @@ class SplashPage extends StatelessWidget {
                     ],
                   )
                 )
-              )
+              ),
+              AnimatedContainer(
+                onEnd: _.onEnd,
+                curve: Curves.fastOutSlowIn,
+                duration: const Duration(milliseconds: 1300),
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(bottom: _.animatedMargin),
+                child: SizedBox(
+                  width: 220,
+                  height: 220,
+                  child: Card(
+                    color: Colors.white,
+                    elevation: 8.0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(22.0),
+                      child: Image.asset(
+                        'assets/um_summerclass.png',
+                        // height: 80.0,
+                        alignment: Alignment.center,
+                        fit: BoxFit.fitHeight,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           );
         },

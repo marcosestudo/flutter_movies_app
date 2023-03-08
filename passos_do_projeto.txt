@@ -62,3 +62,4 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 02. SPLASH adicionada a lib/app/routes/app_routes
 03. criada pasta lib/app/ui/splash e arquivo lib/app/ui/splash/splash_page.dart
 04. buiulder criado em splash_page.dart
+05. adicionado AnimatedContainer em splash_page.dart

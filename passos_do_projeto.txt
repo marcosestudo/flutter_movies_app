@@ -56,3 +56,5 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 08/03/2023 aula 03: https://www.youtube.com/watch?v=i6mCwiL0k4k
 01. criada pasta assets na raiz
 02. pasta assets adicionada ao pubspec.yaml na linha 64
+
+08/03/2023 aula 04: https://www.youtube.com/watch?v=n_urhfu-SNI

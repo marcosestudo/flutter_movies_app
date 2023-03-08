@@ -11,4 +11,10 @@ class SplashController extends GetxController {
     animatedMargin = 80.0;
     update();
   }
+
+  void onEnd() {
+    Future.delayed(
+        const Duration(milliseconds: 300),
+        () => Get.offAllNamed(Routes.HOME));
+  }
 }

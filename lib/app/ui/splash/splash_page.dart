@@ -64,8 +64,8 @@ class SplashPage extends StatelessWidget {
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(bottom: _.animatedMargin),
                 child: SizedBox(
-                  width: 220,
-                  height: 220,
+                  width: _.findLogoSize(),
+                  height: _.findLogoSize(),
                   child: Card(
                     color: Colors.white,
                     elevation: 8.0,

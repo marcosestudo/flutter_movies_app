@@ -58,3 +58,10 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 02. pasta assets adicionada ao pubspec.yaml na linha 64
 
 08/03/2023 aula 04: https://www.youtube.com/watch?v=n_urhfu-SNI
+01. intialRoute mudado pra Routes.SPLASH em lib/main.dart
+02. SPLASH adicionada a lib/app/routes/app_routes
+03. criada pasta lib/app/ui/splash e arquivo lib/app/ui/splash/splash_page.dart
+04. buiulder criado em splash_page.dart
+05. adicionado AnimatedContainer em splash_page.dart
+06. adicionado splashcontroller.dart a lib/app/controllers
+07. adicionado SplashPage a app_pages.dart

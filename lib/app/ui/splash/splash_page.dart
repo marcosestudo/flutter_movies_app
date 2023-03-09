@@ -15,7 +15,7 @@ class SplashPage extends StatelessWidget {
           return Stack(
             children: [
               AnimatedOpacity(
-                duration: const Duration(milliseconds: 5200),
+                duration: const Duration(milliseconds: 3200),
                 opacity: _.visibleStrip ? 1.0 : 0.0,
                 child: Center(
                   child: Column(
@@ -59,7 +59,7 @@ class SplashPage extends StatelessWidget {
               AnimatedContainer(
                 onEnd: _.onEnd,
                 curve: Curves.fastOutSlowIn,
-                duration: const Duration(milliseconds: 5300),
+                duration: const Duration(milliseconds: 3300),
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(bottom: _.animatedMargin),
                 child: SizedBox(
@@ -75,7 +75,6 @@ class SplashPage extends StatelessWidget {
                       padding: const EdgeInsets.all(22.0),
                       child: Image.asset(
                         'assets/um_summerclass.png',
-                        // height: 80.0,
                         alignment: Alignment.center,
                         fit: BoxFit.fitHeight,
                       ),

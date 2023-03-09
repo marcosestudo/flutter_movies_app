@@ -15,7 +15,7 @@ class SplashPage extends StatelessWidget {
           return Stack(
             children: [
               AnimatedOpacity(
-                duration: const Duration(milliseconds: 3200),
+                duration: const Duration(milliseconds: 1200),
                 opacity: _.visibleStrip ? 1.0 : 0.0,
                 child: Center(
                   child: Column(
@@ -59,7 +59,7 @@ class SplashPage extends StatelessWidget {
               AnimatedContainer(
                 onEnd: _.onEnd,
                 curve: Curves.fastOutSlowIn,
-                duration: const Duration(milliseconds: 3300),
+                duration: const Duration(milliseconds: 1300),
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(bottom: _.animatedMargin),
                 child: SizedBox(

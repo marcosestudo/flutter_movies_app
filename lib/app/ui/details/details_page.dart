@@ -23,7 +23,9 @@ class DetailsPage extends GetView<DetailsController> {
             ));
           }),
       floatingActionButton: FloatingActionButton(
-          onPressed: controller.onPressedFloatingAction),
+          onPressed: controller.onPressedFloatingAction,
+          child: const Icon(Icons.add),
+      )
     );
   }
 }

@@ -66,6 +66,8 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 06. adicionado splashcontroller.dart a lib/app/controllers
 07. adicionado SplashPage a app_pages.dart
 
+13/03/2023 material de apoio: https://docs.google.com/document/d/1lHlhyYMbyDlADHoERypp-G46WRIXhgpGPftyzs_jT6k/edit
+
 13/03/2023 aula 01: https://drive.google.com/file/d/1ghUXfzqf3xNRqXMwIKKvwqwssoCynMKl/view
 01. planilha criada no google sheets
 02. novo projeto criado no google cloud https://console.cloud.google.com/
@@ -73,3 +75,6 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 04. credenciais de conta de serviço criadas
 05. chave json adicionada à conta de serviço em editar conta de serviço/chaves
 06. planilha compartilhada com o email gerado pra conta de serviço
+
+13/03/2023 aula 02: https://drive.google.com/file/d/1rYDTFWTq9KdzpV2V8brTgYg46JOeF7BE/view
+01. apps scripts criados pra planilha em extensões/apps script

@@ -78,3 +78,9 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 
 13/03/2023 aula 02: https://drive.google.com/file/d/1rYDTFWTq9KdzpV2V8brTgYg46JOeF7BE/view
 01. apps scripts criados pra planilha em extensões/apps script
+
+13/03/2023 aula 03: https://drive.google.com/file/d/11kKeEFTlstPFUHepsKEigoFS8p8pXftD/view
+01. criados a pasta app/data/model e o arquivo movie_model.dart
+
+13/03/2023 aula 04: https://drive.google.com/file/d/1PMRjXo42e2Sm55obH6t46OqwYHGmIMWm/view
+01.

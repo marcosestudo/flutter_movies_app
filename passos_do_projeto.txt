@@ -73,14 +73,16 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 02. novo projeto criado no google cloud https://console.cloud.google.com/
 03. api do google sheets ativada pro projeto
 04. credenciais de conta de serviço criadas
-05. chave json adicionada à conta de serviço em editar conta de serviço/chaves
+05. chave json adicionada à conta de serviço em "editar conta de serviço"/chaves
 06. planilha compartilhada com o email gerado pra conta de serviço
 
 13/03/2023 aula 02: https://drive.google.com/file/d/1rYDTFWTq9KdzpV2V8brTgYg46JOeF7BE/view
-01. apps scripts criados pra planilha em extensões/apps script
+01. apps scripts criados pra planilha em extensões/"apps script"
 
 13/03/2023 aula 03: https://drive.google.com/file/d/11kKeEFTlstPFUHepsKEigoFS8p8pXftD/view
-01. criados a pasta app/data/model e o arquivo movie_model.dart
+01. criados a pasta lib/app/data/model e o arquivo lib/app/data/model/movie_model.dart
 
 13/03/2023 aula 04: https://drive.google.com/file/d/1PMRjXo42e2Sm55obH6t46OqwYHGmIMWm/view
-01.
+01. criados a pasta lib/app/data/provider e o lib/app/data/providerarquivo api.dart
+02. baseurl copiada da planilha em "app extensões/scripts"/imlpantar/"gerenciar implantações"/"app da web"/url
+03. adiconada dependência html ao pubspec.yaml

@@ -83,6 +83,9 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 01. criados a pasta lib/app/data/model e o arquivo lib/app/data/model/movie_model.dart
 
 13/03/2023 aula 04: https://drive.google.com/file/d/1PMRjXo42e2Sm55obH6t46OqwYHGmIMWm/view
-01. criados a pasta lib/app/data/provider e o lib/app/data/providerarquivo api.dart
+01. criados a pasta lib/app/data/provider e o arquivo lib/app/data/providerarquivo api.dart
 02. baseurl copiada da planilha em "app extensões/scripts"/imlpantar/"gerenciar implantações"/"app da web"/url
 03. adiconada dependência html ao pubspec.yaml
+
+13/03/2023 aula 05:
+01. criados a pasta lib/app/data/repository e o arquivo lib/app/data/repository/movie_repository.dart

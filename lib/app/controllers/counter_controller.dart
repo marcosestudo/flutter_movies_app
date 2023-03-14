@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:meta/meta.dart';
 
-class DetailsController extends GetxController {
+class CounterController extends GetxController {
   // obs == variável observable (observável), uma stream de dados
   // o app etá sempre "olhando" a variávela obs pra ver se ela é modoficada
   // se em algum momento ela for alterada, será atualizada na tela semprecisrmos chamar a função update()

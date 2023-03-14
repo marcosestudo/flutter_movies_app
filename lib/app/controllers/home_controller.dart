@@ -10,7 +10,7 @@ class HomeController extends GetxController {
     // Get.toNamed() método para navegação por rota nomeada no getx com possibilidade de voltar
     // Get.offNamed() navega pra página e não pode voltar pra página anterior, se clicar na seta pra voltar, sai do app
     // Get.offAllNamed() navega pra uma página que fecha todas as anteriores
-    Get.toNamed(Routes.DETAILS);
+    Get.toNamed(Routes.COUNTER);
   }
 
   // função onInit() é chamada assim que a tela começa a ser carregada

@@ -21,7 +21,7 @@ class MovieApiClient {
         debugPrint('Error -getAll');
       }
     } catch (e) {
-      debugPrint("Error fetcing from API: $e");
+      debugPrint("Error fetching from API: $e");
     }
     return [];
   }

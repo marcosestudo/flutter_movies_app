@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:primeiro_app/app/controllers/details_controller.dart';
+import 'package:primeiro_app/app/controllers/counter_controller.dart';
 
-class DetailsPage extends GetView<DetailsController> {
-  const DetailsPage({Key? key}) : super(key: key);
+class CounterPage extends GetView<CounterController> {
+  const CounterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Details Page (｡•́‿•̀｡)'),
+      appBar: AppBar(title: const Text('Counter Page (｡•́‿•̀｡)'),
           centerTitle: true,
           automaticallyImplyLeading: true),
-      body: GetBuilder<DetailsController>(
+      body: GetBuilder<CounterController>(
           // init: DetailsController(), foi pro arquivo details_binding
           // details_controller deve ser iniciado antes da página para ser visto pelo wrap Getx
           // por isso saiu daqui e foi pra binding
           builder: (_) {
-            return Center(child: GetX<DetailsController>(
+            return Center(child: GetX<CounterController>(
               builder: (_) {
                 return Text("${controller.number}", style: const TextStyle(fontSize: 22));
               },

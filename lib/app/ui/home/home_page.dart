@@ -11,12 +11,12 @@ class HomePage extends GetView<HomeController> {
       appBar: AppBar(title: Text('Home Page')),
       body: GetBuilder<HomeController>(
           builder: (_) {
-            return controller.isLoading! ? const Center(child: CircularProgressIndicator()) :
+            return controller.isLoading ? const Center(child: CircularProgressIndicator()) :
                 VerticalCardPager(
-                  intilaPage: 1,
-                  titles: const <String>["","","",""],
+                  initialPage: 1,
+                  titles: const <String>["","","","",""],
                   images: controller.images,
-                  onSelectedItem: controller.onSelectedItem,
+                  // onSelectedItem: controller.onSelectedItem,
                 );
           }),
     );

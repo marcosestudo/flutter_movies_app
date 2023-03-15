@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart'; 
 import 'package:get/get.dart';
-import 'package:primeiro_app/app/bindings/initial_binding.dart';
 import 'package:primeiro_app/app/routes/app_pages.dart';
 
 void main() {
@@ -9,6 +8,5 @@ void main() {
     initialRoute: Routes.SPLASH,
     defaultTransition: Transition.fade,   
     getPages: AppPages.pages,
-    initialBinding: InitialBinding(),
   ));   
 }

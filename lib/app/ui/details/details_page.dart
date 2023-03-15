@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:primeiro_app/app/controllers/counter_controller.dart';
+import 'package:primeiro_app/app/controllers/details_controller.dart';
 
-class CounterPage extends GetView<CounterController> {
-  const CounterPage({Key? key}) : super(key: key);
+class DetailsPage extends GetView<CounterController> {
+  const DetailsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

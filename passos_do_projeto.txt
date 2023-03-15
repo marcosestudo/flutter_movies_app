@@ -89,3 +89,5 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 
 13/03/2023 aula 05:
 01. criados a pasta lib/app/data/repository e o arquivo lib/app/data/repository/movie_repository.dart
+
+15/03/2023 aula 01: https://www.youtube.com/watch?v=ReKGGU3QYp8

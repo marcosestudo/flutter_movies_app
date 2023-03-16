@@ -48,14 +48,18 @@ class HomeController extends GetxController {
     }
   }
 
+  // o index vem do onSelectedItem na home page
+  // index + 1 na tag pra acompanhar a tag que começa com 1 no método fillMovieInfo
   void onSelectedItem(int index) {
     Get.toNamed(
-      Routes.DETAILS,
-      arguments: {
-        "movie_info": movieList[index],
-        // index + 1 pra  acompanhar a tag que começa com 1 no método fillMovieInfo
-        "tag": index + 1,
-      }
+        Routes.DETAILS,
+        arguments: {"movie_info": movieList[index], "tag": index + 1,}
     );
+  }
+
+  void onPressed() {
+    isLoading = true;
+    update();
+    fetchData();
   }
 }

@@ -5,6 +5,7 @@ class DetailsController extends GetxController {
   get likedMovie => _likedMovie.value;
   set likedMovie(value) => _likedMovie.value = value;
 
+  // TODO: tornar likes permanentes
   void onPressedLikeBtn() {
     likedMovie = !likedMovie;
   }

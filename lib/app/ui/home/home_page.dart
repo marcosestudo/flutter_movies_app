@@ -25,6 +25,7 @@ class HomePage extends GetView<HomeController> {
             : VerticalCardPager(
                 initialPage: 1,
                 // titles: const <String>["","","","",""],
+                // TODO: transformar titles numa lista com tamnaho dinâmico
                 titles: controller.verticalCardPagerTitles,
                 images: controller.images,
                 onSelectedItem: controller.onSelectedItem,

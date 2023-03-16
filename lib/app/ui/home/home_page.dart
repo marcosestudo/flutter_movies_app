@@ -8,13 +8,16 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home Page')),
+      backgroundColor: Colors.black,
+      appBar: AppBar(title:  const Text('Home Page'), centerTitle: true,),
       body: GetBuilder<HomeController>(
           builder: (_) {
+            // List<String> verticalCardPagerTitles = List.filled(controller.movieList.length, "");
             return controller.isLoading ? const Center(child: CircularProgressIndicator()) :
                 VerticalCardPager(
                   initialPage: 1,
-                  titles: const <String>["","","","",""],
+                  // titles: const <String>["","","","",""],
+                  titles: controller.verticalCardPagerTitles,
                   images: controller.images,
                   // onSelectedItem: controller.onSelectedItem,
                 );

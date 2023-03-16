@@ -15,6 +15,7 @@ class HomeController extends GetxController {
   List<String?> titles = [];
   List<Widget> images = [];
   List<String> imgUrl = [];
+  List<String> verticalCardPagerTitles = [];
 
   @override
   void onInit() {
@@ -34,6 +35,7 @@ class HomeController extends GetxController {
   void fillMovieInfo(List<MovieModel> movieList) {
     int i = 1;
     for (MovieModel movie in movieList) {
+      verticalCardPagerTitles.add("");
       titles.add(movie.titulo);
       imgUrl.add(movie.img);
       images.add(

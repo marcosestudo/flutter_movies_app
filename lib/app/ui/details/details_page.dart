@@ -1,18 +1,77 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:primeiro_app/app/controllers/details_controller.dart';
+import 'package:primeiro_app/app/controllers/home_controller.dart';
+import 'package:primeiro_app/app/data/model/movie_model.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({Key? key}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // argumentos recebidos da função onSelectedItem na home controller
+    MovieModel movieInfo = Get.arguments["movie_info"];
+    int heroTag = Get.arguments["tag"];
     return Scaffold(
       appBar: AppBar(title: Text('Details Page')),
       body: GetBuilder<DetailsController>(
           init: DetailsController(),
           builder: (_) {
-            return Container();
+            return ListView(
+              children: [
+                Stack(
+                  children: [
+                    Hero(
+                      tag: heroTag,
+                      child: ShaderMask(
+                        shaderCallback: (rect) {
+                          return const LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [Colors.white, Colors.black],
+                          ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
+                        },
+                        child: Image.network(
+                          movieInfo.img,
+                          fit: BoxFit.fitWidth,
+                          width: double.infinity,
+                        )
+                      )
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(movieInfo.titulo, style: const TextStyle(
+                      color:Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22),),
+                    IconButton(
+                      onPressed: _.onPressedLikeBtn,
+                      icon: GetX<HomeController>(
+                        builder: (_) {
+                          return Icon(_.likedMovie ? Icons.favorite : Icons.favorite_border);
+                        },
+                      ), color: Colors.red,
+                    )
+                  ]
+                ),
+                Text(movieInfo.diretor, style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w100,
+                  fontSize: 12),),
+                const SizedBox(height: 20,),
+                Text(
+                  movieInfo.sinopse,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
+                )
+              ],
+            );
           }),
     );
   }

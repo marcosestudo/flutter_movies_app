@@ -12,9 +12,7 @@ class HomeController extends GetxController {
   HomeController({@required this.movieRepository}) : assert(movieRepository != null);
 
   List<MovieModel> movieList = [];
-  List<String?> titles = [];
   List<Widget> images = [];
-  List<String> imgUrl = [];
   List<String> verticalCardPagerTitles = [];
 
   @override
@@ -36,8 +34,6 @@ class HomeController extends GetxController {
     int i = 1;
     for (MovieModel movie in movieList) {
       verticalCardPagerTitles.add("");
-      titles.add(movie.titulo);
-      imgUrl.add(movie.img);
       images.add(
         Hero(
           tag: i,

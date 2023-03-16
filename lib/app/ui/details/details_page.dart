@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:primeiro_app/app/controllers/details_controller.dart';
-import 'package:primeiro_app/app/controllers/home_controller.dart';
 import 'package:primeiro_app/app/data/model/movie_model.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -13,7 +12,11 @@ class DetailsPage extends StatelessWidget {
     MovieModel movieInfo = Get.arguments["movie_info"];
     int heroTag = Get.arguments["tag"];
     return Scaffold(
-      appBar: AppBar(title: Text('Details Page')),
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: const Text('Details Page'),
+        centerTitle: true,
+        automaticallyImplyLeading: true,),
       body: GetBuilder<DetailsController>(
           init: DetailsController(),
           builder: (_) {
@@ -50,7 +53,7 @@ class DetailsPage extends StatelessWidget {
                       fontSize: 22),),
                     IconButton(
                       onPressed: _.onPressedLikeBtn,
-                      icon: GetX<HomeController>(
+                      icon: GetX<DetailsController>(
                         builder: (_) {
                           return Icon(_.likedMovie ? Icons.favorite : Icons.favorite_border);
                         },

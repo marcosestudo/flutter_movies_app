@@ -59,6 +59,8 @@ class HomeController extends GetxController {
 
   void onPressed() {
     isLoading = true;
+    images = [];
+    verticalCardPagerTitles = [];
     update();
     fetchData();
   }

@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:primeiro_app/app/data/model/movie_model.dart';
 import 'package:primeiro_app/app/data/repository/movie_repository.dart';
-
+import 'package:primeiro_app/app/routes/app_pages.dart';
 
 class HomeController extends GetxController {
-
   final MovieRepository? movieRepository;
   bool isLoading = true;
 
@@ -47,5 +46,16 @@ class HomeController extends GetxController {
         ),);
       i++;
     }
+  }
+
+  void onSelectedItem(int index) {
+    Get.toNamed(
+      Routes.DETAILS,
+      arguments: {
+        "movie_info": movieList[index],
+        // index + 1 pra  acompanhar a tag que começa com 1 no método fillMovieInfo
+        "tag": index + 1,
+      }
+    );
   }
 }

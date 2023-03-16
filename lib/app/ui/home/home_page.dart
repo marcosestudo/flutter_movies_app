@@ -19,7 +19,7 @@ class HomePage extends GetView<HomeController> {
                   // titles: const <String>["","","","",""],
                   titles: controller.verticalCardPagerTitles,
                   images: controller.images,
-                  // onSelectedItem: controller.onSelectedItem,
+                  onSelectedItem: controller.onSelectedItem,
                 );
           }),
     );

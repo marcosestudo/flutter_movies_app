@@ -4,6 +4,7 @@ class MovieModel {
   String sinopse = "";
   String img = "";
   String diretor = "";
+  int liked = 0;
 
   MovieModel();
 
@@ -13,6 +14,7 @@ class MovieModel {
       sinopse = json['sinopse'];
       img = json['img'];
       diretor = json['diretor'];
+      liked = json['liked'];
   }
 
   Map<String, dynamic> toJson() {
@@ -22,6 +24,7 @@ class MovieModel {
     data['sinopse'] = this.sinopse;
     data['img'] = this.img;
     data['diretor'] = this.diretor;
+    data['liked'] = this.liked;
     return data;
   }
 }

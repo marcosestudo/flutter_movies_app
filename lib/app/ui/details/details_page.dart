@@ -55,10 +55,10 @@ class DetailsPage extends StatelessWidget {
                       onPressed: _.onPressedLikeBtn,
                       icon: GetX<DetailsController>(
                         builder: (_) {
-                          return Icon(_.likedMovie ? Icons.favorite : Icons.favorite_border);
+                          return Icon((_.liked[_.likedIndex] == 1) ? Icons.favorite : Icons.favorite_border);
                         },
                       ), color: Colors.red,
-                    )
+                    ),
                   ]
                 ),
                 Text(movieInfo.diretor, style: const TextStyle(

@@ -26,17 +26,17 @@ class MovieApiClient {
     return [];
   }
 
-  Future edit(obj) async {
-    try {
-      final response = await httpClient!.put(Uri.parse(baseUrl),
-          headers: _defaultHeaders, body: jsonEncode(obj));
-      if (response.statusCode == 200) {
-        // TODO: implement methods!
-      } else {
-        print('Error -edit');
-      }
-    } catch (_) {}
-    return null;
-  }
+  // Future edit(obj) async {
+  //   try {
+  //     final response = await httpClient!.put(Uri.parse(baseUrl),
+  //         headers: _defaultHeaders, body: jsonEncode(obj));
+  //     if (response.statusCode == 200) {
+  //       // TODO: implement methods!
+  //     } else {
+  //       print('Error -edit');
+  //     }
+  //   } catch (_) {}
+  //   return null;
+  // }
 
 }

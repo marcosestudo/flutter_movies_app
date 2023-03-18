@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:meta/meta.dart';
 import 'package:primeiro_app/app/data/model/movie_model.dart';
 
-const baseUrl = 'https://script.google.com/macros/s/AKfycbxrrBTyAUyCtcO4Bu_BRXvD15LwrzYi0txj-OsdhLpIb5aNpIaI9hjNfJGvUPvaFia67w/exec';
+const baseUrl = 'https://script.google.com/macros/s/AKfycbyvS9U7BDygMMjys7spLCWw4JgCfcrDEF4Irg2bcNSVrc28I9FZKGgHQ9ImMRcX_Ajilw/exec';
 
 class MovieApiClient {
   final http.Client? httpClient;
@@ -26,14 +26,13 @@ class MovieApiClient {
     return [];
   }
 
-  Future likedEdit() async {
+  Future likedEdit(int index) async {
     try {
-      final response = await httpClient!.post(Uri.parse(baseUrl),
-          headers: {});
+      final response = await httpClient!.post(Uri.parse('$baseUrl?index=$index'));
       if (response.statusCode == 200) {
-        // TODO: implement methods!
+        debugPrint('Success -edit');
       } else {
-        print('Error -edit');
+        debugPrint('Error -edit');
       }
     } catch (_) {}
     return null;

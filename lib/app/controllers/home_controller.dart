@@ -66,7 +66,6 @@ class HomeController extends GetxController {
     likedList = [];
     images = [];
     verticalCardPagerTitles = [];
-    movieRepository?.likedEdit();
     update();
     fetchData();
   }

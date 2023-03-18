@@ -10,8 +10,8 @@ class MovieRepository {
     return apiClient!.getAll();
   }
 
-  Future likedEdit() {
-    return apiClient!.likedEdit();
+  Future likedEdit(int index) {
+    return apiClient!.likedEdit(index);
   }
 
 }

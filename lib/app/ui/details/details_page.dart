@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:primeiro_app/app/controllers/details_controller.dart';
 import 'package:primeiro_app/app/data/model/movie_model.dart';
 
-class DetailsPage extends StatelessWidget {
+class DetailsPage extends GetView<DetailsController> {
   const DetailsPage({Key? key}): super(key: key);
 
   @override
@@ -18,7 +18,6 @@ class DetailsPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: true,),
       body: GetBuilder<DetailsController>(
-          init: DetailsController(),
           builder: (_) {
             return ListView(
               children: [
@@ -55,7 +54,7 @@ class DetailsPage extends StatelessWidget {
                       onPressed: _.onPressedLikeBtn,
                       icon: GetX<DetailsController>(
                         builder: (_) {
-                          return Icon(_.likedMovie ? Icons.favorite : Icons.favorite_border);
+                          return Icon(controller.likedMovie ? Icons.favorite : Icons.favorite_border);
                         },
                       ), color: Colors.red,
                     ),

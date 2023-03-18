@@ -13,6 +13,7 @@ class HomeController extends GetxController {
   List<MovieModel> movieList = [];
   List<int> likedList = [];
   late bool liked;
+  late int onPressedIndex;
   List<Widget> images = [];
   List<String> verticalCardPagerTitles = [];
 
@@ -55,6 +56,7 @@ class HomeController extends GetxController {
   // index + 1 na tag pra acompanhar a tag que começa com 1 no método fillMovieInfo
   void onSelectedItem(int index) {
     liked = likedList[index] == 1 ? true : false;
+    onPressedIndex = index + 1;
     Get.toNamed(
         Routes.DETAILS,
         arguments: {"movie_info": movieList[index], "tag": index + 1,}

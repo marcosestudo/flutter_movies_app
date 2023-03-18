@@ -15,8 +15,6 @@ class DetailsController extends GetxController {
   get likedMovie => _likedMovie.value;
   set likedMovie(value) => _likedMovie.value = value;
 
-
-
   void onPressedLikeBtn() {
     likedMovie = !likedMovie;
 

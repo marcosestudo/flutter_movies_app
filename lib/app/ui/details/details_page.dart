@@ -50,14 +50,17 @@ class DetailsPage extends GetView<DetailsController> {
                       color:Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 22),),
-                    IconButton(
-                      onPressed: _.onPressedLikeBtn,
-                      icon: GetX<DetailsController>(
-                        builder: (_) {
-                          return Icon(controller.likedMovie ? Icons.favorite : Icons.favorite_border);
-                        },
-                      ), color: Colors.red,
+
+                   GetX<DetailsController>(
+                      builder: (_) {
+                        return controller.loadingLike
+                            ? const Center(child: CircularProgressIndicator(color: Colors.red,))
+                            : controller.likedMovie
+                            ? IconButton(onPressed: controller.onPressedLikeBtn, icon: Icon(Icons.favorite), color: Colors.red,)
+                            : IconButton(onPressed: controller.onPressedLikeBtn, icon: Icon(Icons.favorite_border), color: Colors.red,);
+                      },
                     ),
+
                   ]
                 ),
                 Text(movieInfo.diretor, style: const TextStyle(

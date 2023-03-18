@@ -51,15 +51,13 @@ class DetailsPage extends GetView<DetailsController> {
                       fontWeight: FontWeight.bold,
                       fontSize: 22),),
 
-                   GetX<DetailsController>(
-                      builder: (_) {
-                        return controller.loadingLike
+                    controller.loadingLike
                             ? const Center(child: CircularProgressIndicator(color: Colors.red,))
                             : controller.likedMovie
                             ? IconButton(onPressed: controller.onPressedLikeBtn, icon: Icon(Icons.favorite), color: Colors.red,)
-                            : IconButton(onPressed: controller.onPressedLikeBtn, icon: Icon(Icons.favorite_border), color: Colors.red,);
-                      },
-                    ),
+                            : IconButton(onPressed: controller.onPressedLikeBtn, icon: Icon(Icons.favorite_border), color: Colors.red,)
+                      ,
+
 
                   ]
                 ),

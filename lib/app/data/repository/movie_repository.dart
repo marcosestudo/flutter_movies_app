@@ -9,4 +9,9 @@ class MovieRepository {
   Future getAll() {
     return apiClient!.getAll();
   }
+
+  Future likedEdit() {
+    return apiClient!.likedEdit();
+  }
+
 }

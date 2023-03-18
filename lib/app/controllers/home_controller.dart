@@ -11,8 +11,8 @@ class HomeController extends GetxController {
   HomeController({@required this.movieRepository}) : assert(movieRepository != null);
 
   List<MovieModel> movieList = [];
-  List<int> likedList = [];
-  late bool liked;
+  List<bool> likedList = [];
+  late bool liked = false;
   late int onPressedIndex;
   List<Widget> images = [];
   List<String> verticalCardPagerTitles = [];
@@ -55,7 +55,7 @@ class HomeController extends GetxController {
   // o index vem do onSelectedItem na home page
   // index + 1 na tag pra acompanhar a tag que começa com 1 no método fillMovieInfo
   void onSelectedItem(int index) {
-    liked = likedList[index] == 1 ? true : false;
+    liked = likedList[index];
     onPressedIndex = index + 1;
     Get.toNamed(
         Routes.DETAILS,

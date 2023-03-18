@@ -4,7 +4,7 @@ class MovieModel {
   String sinopse = "";
   String img = "";
   String diretor = "";
-  int liked = 0;
+  late bool liked;
 
   MovieModel();
 

@@ -14,4 +14,8 @@ class MovieRepository {
     return apiClient!.likedEdit(index);
   }
 
+  Future getLike(int index) {
+    return apiClient!.getLike(index);
+  }
+
 }

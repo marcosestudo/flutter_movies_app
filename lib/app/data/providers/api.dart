@@ -16,7 +16,7 @@ class MovieApiClient {
       final response = await httpClient!.get(Uri.parse(baseUrl));
       if (response.statusCode == 200) {
         List<dynamic> jsonResponse = jsonDecode(response.body);
-        debugPrint(jsonResponse.toString());
+        debugPrint(jsonResponse[0]["liked"].toString());
         return jsonResponse.map((movieJson) => MovieModel.fromJson(movieJson)).toList();
       } else {
         debugPrint('Error -getAll');
@@ -27,20 +27,19 @@ class MovieApiClient {
     return [];
   }
 
-  // Future<bool> getlike(index) async {
-  //   try {
-  //     final response = await httpClient!.get(Uri.parse(baseUrl));
-  //     if (response.statusCode == 200) {
-  //       List<dynamic> jsonResponse = jsonDecode(response.body);
-  //       return jsonResponse.map((movieJson) => MovieModel.fromJson(movieJson)).toList();
-  //     } else {
-  //       debugPrint('Error -getAll');
-  //     }
-  //   } catch (e) {
-  //     debugPrint("Error fetching from API: $e");
-  //   }
-  //   return [];
-  // }
+  Future<bool?> getLike(index) async {
+    try {
+      final response = await httpClient!.get(Uri.parse(baseUrl));
+      if (response.statusCode == 200) {
+        List<dynamic> jsonResponse = jsonDecode(response.body);
+        return jsonResponse[index]["liked"];
+      } else {
+        debugPrint('Error -getAll');
+      }
+    } catch (e) {
+      debugPrint("Error fetching from API: $e");
+    }
+  }
 
   Future likedEdit(int index) async {
     try {

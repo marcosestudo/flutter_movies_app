@@ -56,7 +56,7 @@ class HomeController extends GetxController {
   // index + 1 na tag pra acompanhar a tag que começa com 1 no método fillMovieInfo
   void onSelectedItem(int index) {
     liked = likedList[index];
-    onPressedIndex = index + 1;
+    onPressedIndex = index;
     Get.toNamed(
         Routes.DETAILS,
         arguments: {"movie_info": movieList[index], "tag": index + 1,}

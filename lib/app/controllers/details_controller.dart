@@ -15,12 +15,23 @@ class DetailsController extends GetxController {
   get likedMovie => _likedMovie.value;
   set likedMovie(value) => _likedMovie.value = value;
 
+  @override
+  void onInit() {
+    loadingLike = true;
+    movieRepository?.getLike(index).then((value) {
+      likedMovie = value;
+      loadingLike = false;
+      update();
+    });
+    super.onInit();
+  }
+
   void onPressedLikeBtn() {
     likedMovie = !likedMovie;
 
     loadingLike = true;
     update();
-    movieRepository?.likedEdit(index).then((value) {
+    movieRepository?.likedEdit(index + 1).then((value) {
       loadingLike = false;
       update();
     });

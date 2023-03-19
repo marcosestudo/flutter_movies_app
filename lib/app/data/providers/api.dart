@@ -16,7 +16,6 @@ class MovieApiClient {
       final response = await httpClient!.get(Uri.parse(baseUrl));
       if (response.statusCode == 200) {
         List<dynamic> jsonResponse = jsonDecode(response.body);
-        debugPrint(jsonResponse[0]["liked"].toString());
         return jsonResponse.map((movieJson) => MovieModel.fromJson(movieJson)).toList();
       } else {
         debugPrint('Error -getAll');

@@ -28,12 +28,7 @@ class DetailsController extends GetxController {
 
   void onPressedLikeBtn() {
     likedMovie = !likedMovie;
-
-    loadingLike = true;
     update();
-    movieRepository?.likedEdit(index + 1).then((value) {
-      loadingLike = false;
-      update();
-    });
+    movieRepository?.likedEdit(index + 1);
   }
 }

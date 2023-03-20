@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.primeiro_app">
    <application
-        android:label="primeiro_app"
+        android:label="Summerclass 2023"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

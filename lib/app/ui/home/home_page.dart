@@ -9,7 +9,7 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: const Text('Filmes nacionais'),
         centerTitle: true,
         actions: [
           IconButton(

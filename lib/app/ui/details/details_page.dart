@@ -14,7 +14,7 @@ class DetailsPage extends GetView<DetailsController> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Details Page'),
+        title: const Text('Sobre o filme'),
         centerTitle: true,
         automaticallyImplyLeading: true,),
       body: GetBuilder<DetailsController>(

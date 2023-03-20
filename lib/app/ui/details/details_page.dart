@@ -11,7 +11,7 @@ class DetailsPage extends GetView<DetailsController> {
     // argumentos recebidos da função onSelectedItem na home controller
     MovieModel movieInfo = Get.arguments["movie_info"];
     int heroTag = Get.arguments["tag"];
-    return Scaffold(
+    return Scaffold( // TODO: testar WillPopScope
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text('Sobre o filme'),

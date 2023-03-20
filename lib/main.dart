@@ -5,7 +5,7 @@ import 'package:primeiro_app/app/routes/app_pages.dart';
 void main() {
   runApp(GetMaterialApp(
     title: "Primeiro app com flutter",
-    debugShowCheckedModeBanner: true,   
+    debugShowCheckedModeBanner: false,
     initialRoute: Routes.SPLASH,
     defaultTransition: Transition.fade,   
     getPages: AppPages.pages,

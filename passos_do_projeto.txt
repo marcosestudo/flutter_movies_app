@@ -98,6 +98,7 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 01. app renomeado no arquivo android/app/src/main/AndroidManifest.xml na linha 4
 02. app renomeado no arquivo ios/Runner/Info.plist na linha 16
 
+20/03/2023 aula 02: https://drive.google.com/file/d/1vHHqTVO__y0LtvRva1omDWz1qGgXM_cv/view
 
 20/03/2023 aula 03: https://drive.google.com/file/d/1dCI0wUgWPWl30uasx2V6HdN2BTF7eH7j/view
 01. flutter_launcher_icons adicionado às dev dependencies

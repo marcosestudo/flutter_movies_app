@@ -110,3 +110,7 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 20/03/2023 aula 05: https://www.youtube.com/watch?v=woJNB8CKzmI
 01. "Open Androide module in Android Studio" acessado em tools > Flutter
 02. se nao estiver aparecendo a opção, use o comando "flutter create --platforms=android ." no terminal
+03. chave gerada em build > generate signed bundle/apk
+04. criado o arquivo android/key.properties
+05. assinatura configurada em android/app/build.gradle
+06. <uses-permission android:name="android.permission.INTERNET"/> adicionado ao arquivo android/app/src/main/AndroidManifest.xml na linha 3

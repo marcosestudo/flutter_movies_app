@@ -104,3 +104,5 @@ reactive atualiza algo específico como em um relógio que vai atualizando somen
 01. flutter_launcher_icons adicionado às dev dependencies
 02. "flutter pub get" no terminal pra instalar as dependências
 03. "flutter pub run flutter_launcher_icons" para atualizar os ícones do aplicativo
+
+20/03/2023 aula 04: https://www.youtube.com/watch?v=vIdrj46Z6XY

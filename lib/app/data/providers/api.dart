@@ -33,7 +33,7 @@ class MovieApiClient {
         List<dynamic> jsonResponse = jsonDecode(response.body);
         return jsonResponse[index]["liked"];
       } else {
-        debugPrint('Error -getAll');
+        debugPrint('Error -getLike');
       }
     } catch (e) {
       debugPrint("Error fetching from API: $e");

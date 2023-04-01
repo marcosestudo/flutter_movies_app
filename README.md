@@ -1,5 +1,4 @@
-# 
-flutter_movies_app
+# flutter_movies_app
 
 Projeto do curso STI Summerclass.
 

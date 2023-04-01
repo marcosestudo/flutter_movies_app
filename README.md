@@ -1,6 +1,7 @@
-# flutter_weather_api
+# 
+flutter_movies_app
 
-Projeto de app comsumindo a api open weather.
+Projeto do curso STI Summerclass.
 
 ## É necessário ter o Flutter instalado para rodar o código
 ### Observações importantes:

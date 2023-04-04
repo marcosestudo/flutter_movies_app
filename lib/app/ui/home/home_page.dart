@@ -19,7 +19,6 @@ class HomePage extends GetView<HomeController> {
         ],
       ),
       body: GetBuilder<HomeController>(builder: (_) {
-        // List<String> verticalCardPagerTitles = List.filled(controller.movieList.length, "");
         return controller.isLoading
             ? const Center(child: CircularProgressIndicator())
             : VerticalCardPager(
